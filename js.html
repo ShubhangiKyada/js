@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<center><title>MARKSHEET</title></center>
+		
+		<script>
+			function clc()
+			{
+				var s1,s2,s3,T1,T2,T3,sm = 0,tot= 0;
+				
+				s1=document.getElementById("m1").value;
+				s2=document.getElementById("m2").value;
+				s3=document.getElementById("m3").value;
+				
+				T1=document.getElementById("t1").value;
+				T2=document.getElementById("t2").value;
+				T3=document.getElementById("t3").value;
+				
+				sm=parseInt(s1)+parseInt(s2)+parseInt(s3);
+				tot=parseInt(T1)+parseInt(T2)+parseInt(T3);
+				
+				
+				document.getElementById("sum").value = sm;
+				document.getElementById("total").value=tot;
+			}
+		
+		
+		
+		</script>
+
+	</head>
+	
+	<body>
+		<center><h1>MARKSHEET</h1>
+		S1:<input type="text" id="m1"/> / <input type="text" id="t1"/><br/></br>
+		S2:<input type="text" id="m2"/> / <input type="text" id="t2"/><br/></br>
+		S3:<input type="text" id="m3"/> / <input type="text" id="t3"/><br/></br>
+		
+	<button type="button" onclick="clc()">Calculate</button><br/></br>	
+		
+		Total:<input type="text" id="sum" /> / <input type="text" id="total"/><br/></br>
+		
+		
+		
+	
+		</center>
+	</body>
+
+</html>
